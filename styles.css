@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+
+.sliderwrapper .imagelist {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.sliderwrapper .imagelist ::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .imagelist .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
