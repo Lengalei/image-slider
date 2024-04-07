@@ -20,6 +20,7 @@ body{
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 18px;
+    margin-bottom: 30px;
     font-size: 0;
     overflow-x: auto;
     scrollbar-width: none;
@@ -36,4 +37,11 @@ body{
     height: 24px;
     width: 100%;
     background: red;
+    display: flex;
+    align-items: center;
+}
+.slider-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
 }
